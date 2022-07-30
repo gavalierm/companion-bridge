@@ -1,6 +1,6 @@
 const { WebSocketServer } = require('ws');
 
-const wss = new WebSocketServer({ port: 3004 });
+const wss = new WebSocketServer({ port: 9240 });
 
 wss.tally = [undefined, undefined];
 
