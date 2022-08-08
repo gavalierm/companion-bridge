@@ -1,8 +1,10 @@
-console.log("CompanionBridge started");
+const PORT = 9240;
 
 const { WebSocketServer } = require('ws');
 
-const wss = new WebSocketServer({ port: 9240 });
+const wss = new WebSocketServer({ port: PORT });
+
+console.log("CompanionBridge started as: ", PORT);
 
 wss.tally = [undefined, undefined];
 
