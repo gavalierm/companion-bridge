@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DST_PATH="/home/pi/Projects/companion-bridge/"
+DST_PATH="/home/pi/Projects/companion-bridge"
 cd $DST_PATH
 
 git stash
@@ -26,7 +26,7 @@ tmux kill-session -t "$SESSION_ID"
 sleeper
 tmux list-sessions
 #
-tmux new-session -s "$SESSION_ID" -n "knx-usb-ws" -d
+tmux new-session -s "$SESSION_ID" -n "companion-bridge" -d
 printf "\nTMUX: Created new session '$SESSION_ID'\n"
 tmux list-sessions
 sleeper
